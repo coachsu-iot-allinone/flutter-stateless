@@ -12,7 +12,16 @@ class MyApp extends StatelessWidget {
           title: Text('Welcome to Flutter'),
         ),
         body: Center(
-          child: Text('Hello, World'),
+          child: Column(
+            children: [
+              Text('Hello, World'),
+              TextField(),
+              ElevatedButton(
+                child: Icon(Icons.thumb_up),
+                onPressed: () => {},
+              ),
+            ],
+          ),
         ),
       ),
     );
